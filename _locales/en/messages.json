@@ -1,0 +1,6 @@
+{
+	"extName": { "message": "Chrome tab switching" },
+	"extDescription": { "message": "Chrome extension for quick tab switching" },
+
+	"closeMsg": { "message": "Press ESC to close the tab switcher" }
+}

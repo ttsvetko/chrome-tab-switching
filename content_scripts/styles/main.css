@@ -1,0 +1,106 @@
+div[data-ng-controller='TabsListCtrl'] {
+	color: black;
+	font-size: 14px;
+	-webkit-user-select: none;
+}
+
+div[data-ng-controller='TabsListCtrl'] .overlay {
+	background-color: rgba(255, 255, 255, 0.5);
+	display: -webkit-box;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+
+	width: 100%;
+	height: 100%;
+
+	display: -webkit-flex;
+	-webkit-align-items: center;
+	-webkit-justify-content: center;
+}
+
+div[data-ng-controller='TabsListCtrl'] .tabsListDialog {
+	background-color: rgb(255, 255, 255);
+	border: 1px solid #EEE;
+	border-radius: 5px;
+	box-shadow: 0 5px 20px #999;
+	width: 50%;
+	max-height: 50%;
+}
+
+div[data-ng-controller='TabsListCtrl'] .tabsListDialog header {
+	padding: 10px 10px 0;
+}
+
+div[data-ng-controller='TabsListCtrl'] .tabsListDialog .content {
+	padding: 10px 0;
+}
+
+div[data-ng-controller='TabsListCtrl'] input[type=search] {
+	-webkit-appearance: textfield;
+	background-color: #FFF;
+	box-sizing: border-box;
+	border: 1px solid #CCC;
+	border-radius: 3px;
+	display: block;
+	font-size: 14px;
+	line-height: normal;
+	padding: 10px 0 10px 10px;
+	margin: 0;
+	height: auto;
+	width: 100%;
+}
+
+div[data-ng-controller='TabsListCtrl'] input[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: searchfield-decoration;
+}
+
+div[data-ng-controller='TabsListCtrl'] input[type="search"]::-webkit-search-cancel-button {
+	-webkit-appearance: searchfield-cancel-button;
+}
+
+div[data-ng-controller='TabsListCtrl'] input[type=search]:focus {
+	border-color: rgba(82, 168, 236, 0.8);
+	outline: 0;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 
+					0 0 8px rgba(82, 168, 236, 0.6);
+}
+
+div[data-ng-controller='TabsListCtrl'] .list {
+	max-height: 300px;
+	overflow: auto;
+}
+
+div[data-ng-controller='TabsListCtrl'] .list > div {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	padding: 10px;
+	border-bottom: 1px solid #EEE;
+	cursor: default;
+}
+
+div[data-ng-controller='TabsListCtrl'] .list > div:last-child {
+	border-bottom: none;
+}
+
+div[data-ng-controller='TabsListCtrl'] .list > div:hover {
+	background-color: #EEE;
+}
+
+div[data-ng-controller='TabsListCtrl'] .list > div > img {
+	height: 16px;
+	width: 16px;
+	padding: 0;
+	-webkit-margin-end: 10px;
+	vertical-align: top;
+}
+
+div[data-ng-controller='TabsListCtrl'] footer {
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%);
+	border-radius: 0 0 5px 5px;
+	padding: 10px;
+	line-height: normal;
+	text-align: center;
+}
